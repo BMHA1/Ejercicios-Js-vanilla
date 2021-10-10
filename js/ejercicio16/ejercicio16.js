@@ -26,4 +26,4 @@ calculoFactorial = (a) => {
 }
 
 let resultado = calculoFactorial(introduceNumero)
-console.log(resultado)8
+console.log(resultado)
