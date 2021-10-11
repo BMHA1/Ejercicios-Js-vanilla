@@ -6,21 +6,25 @@
 
 var introduceNumero = Number(prompt(""))
 
+numeroprimo = (a) => {
 
-numeroprimo=(a) =>{
-    
-    if(a%2 === 0 || a === 1 ){
-    
-        alert("el numero no es primo")
-    
+    console.log(a)
+for (let i = a; i <= a; i++) { // por cada i...
+    console.log(a)
+    for (let j = a-1; j < i; j++) { // buscar un divisor..
+        console.log(a)
+    if (i % j == 0){
+        console.log(a)
+        alert("no es primo")
     }else{
-        
+        console.log(a)
         alert("es primo")
-    
     }
-
-    return 
+}
+}
 }
 
+let resultado = numeroprimo(introduceNumero)
 
-let resultado = numeroprimo(introduceNumero);
+
+  
