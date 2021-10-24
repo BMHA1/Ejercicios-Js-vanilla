@@ -11,34 +11,34 @@ var numeroDecimal = Number(prompt("introduce numero a convertir"))
 console.log(numeroDecimal);
 var arraybinario = []
 
-// function buscarBinario(a) {
-
-//     while (a >= 1) {
-//         var resto = a % 2
-//         arraybinario.unshift(resto)
-//         a = a / 2
-
-//     }
-
-//     return arraybinario
-
-// }
-
-
-
 function buscarBinario(a) {
 
-    if (a >= 1) {
-        var resto = a % 2
+    while (a >=1) {
+        var resto =Math.floor(a % 2) 
         arraybinario.unshift(resto)
         a = a / 2
-        buscarBinario(a)
+
     }
+
+    return arraybinario
 
 }
 
 buscarBinario(numeroDecimal);
 console.log(arraybinario)
+
+
+// function buscarBinario(a) { // por recursividad
+
+//     if (a >= 1) {
+//         var resto = a % 2
+//         arraybinario.unshift(resto)
+//         a = a / 2
+//         buscarBinario(a)
+//     }
+
+// }
+
 
 
 // arraybinario.unshift(resto)

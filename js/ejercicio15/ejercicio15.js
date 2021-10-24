@@ -4,27 +4,31 @@
 // entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin
 // embargo, 17 si es primo.
 
-var introduceNumero = Number(prompt(""))
+var introduceNumero = Number(prompt("ji"))
 
-numeroprimo = (a) => {
+function numPrimo(input) {
 
-    console.log(a)
-for (let i = a; i <= a; i++) { // por cada i...
-    console.log(a)
-    for (let j = a-1; j < i; j++) { // buscar un divisor..
-        console.log(a)
-    if (i % j == 0){
-        console.log(a)
-        alert("no es primo")
-    }else{
-        console.log(a)
-        alert("es primo")
+    
+
+    let result = [];
+
+    for (i = 2; i <= input; i++) {
+        let numFactors = [];
+
+        for (factor = 2; factor <= i; factor++) {
+            if (i % factor === 0) numFactors.push(factor);
+        }
+        if (numFactors.length === 1) result.push(i);
     }
-}
-}
-}
 
-let resultado = numeroprimo(introduceNumero)
+    if (result.indexOf(input) == -1) {
+        return "false no es primo nooooooooooo"
+    } else {
+        return "true, porque sí, él es numero primo!17"
+    }
 
+}
+let resultado = numPrimo(introduceNumero)
+console.log(resultado)
 
   

@@ -6,45 +6,45 @@
 
 
 
-// var tamañoArray = Number(prompt("indique el tamaño del array"))
-// var arrayN = []
+ var tamañoArray = Number(prompt("indique el tamaño del array"))
+var arrayN = []
 
-// function start() {
-//     rellenar()
-// }
+function start() {
+    rellenar()
+}
 
-// function rellenar(a) {
+function rellenar(a) {
 
-//     for (let i = 0; i <= a; i++) {
-//         console.log(a)
-//         var numeroaletorio = Math.floor(Math.random() * (10 - 0)) + 0;
-//         console.log(numeroaletorio)
-//         arrayN.push(numeroaletorio)
-//     }
+    for (let i = 0; i <= a; i++) {
+        console.log(a)
+        var numeroaletorio = Math.floor(Math.random() * (10 - 0)) + 0;
+        console.log(numeroaletorio)
+        arrayN.push(numeroaletorio)
+    }
 
-//     print()
+    print()
 
-// }
+}
 
-// function sumarArray() {
-//     var sumar = (a, b) => a + b
-//     var result = arrayN.reduce(sumar)
+function sumarArray() {
+    var sumar = (a, b) => a + b
+    var result = arrayN.reduce(sumar)
 
-//     console.log('fin de la función 2')
+    console.log('fin de la función 2')
 
-//     return result;
-// }
+    return result;
+}
 
 
-// function print() {
+function print() {
 
-//     console.log(arrayN)
-//     console.log("la suma total es :" + sumarArray())
+    console.log(arrayN)
+    console.log("la suma total es :" + sumarArray())
 
-//     console.log('fin de la función 3')
-// }
+    console.log('fin de la función 3')
+}
 
-// start(tamañoArray)
-// console.log(arrayN)
+start(tamañoArray)
+console.log(arrayN)
 
 console.log(25%2)
